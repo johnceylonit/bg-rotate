@@ -1,0 +1,20 @@
+<html>
+<head>
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="bg_rotator.js"></script>
+	<title>Background Rotating</title>
+	<style type="text/css">
+		body { background-color: #000; }
+		/** make sure you are setting up a background image that can turn. :) /**/
+		#bg_holder { width: 732px; height: 390px; background: url('grand-white.jpg'); }
+		#bg_holder { background-position: 0 0; }
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function() { rotate_bg('#bg_holder', 3); });
+	</script>
+</head>
+<body>
+	<div id="bg_holder">
+	</div>
+</body>
+</html>
